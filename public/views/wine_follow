@@ -1,0 +1,35 @@
+$(function() {
+
+	$.ajax({
+		url: "http://localhost:3000/ish",
+		type: "GET",
+		success: function(data) {
+			var $ishTemplate = _.template($("#ish-template").html());
+
+			_.each(data, function(ish) {
+				$('#ish-container').append(template(ish)); //check the closing tags
+			});
+		}
+	});
+
+});
+
+// to get an individual id they are nestled in an object ishList
+
+var $ishName = $('#ish-name')
+var seardhUrl = 'localhost:3000';
+
+$.get(seardhUrl, function (data){
+	var ishId = data.ishList.id;
+	console.log(ishId);
+})
+
+var ishId = $(ishTemplate(template));
+$ishName.append(ishTemplate)
+
+
+
+
+
+
+

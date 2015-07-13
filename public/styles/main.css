@@ -1,0 +1,30 @@
+
+footer {
+	text-align: right;
+	padding: 20px;
+}
+
+img {
+	background-size: cover;
+}
+
+.page-header {
+	padding-bottom: 0px;
+	border-bottom: 0px;
+	color: #fff;
+}
+
+.jumbotron {
+	margin-bottom: 0px;
+	background-color: #5b6571;
+	padding-bottom: 0px;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.small {
+	color: #fff;
+}
